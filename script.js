@@ -162,10 +162,11 @@ document.querySelectorAll('#hero .reveal').forEach((el, i) => {
     /* ── POINTER DOWN (mouse + touch) ── */
   function onPointerDown(e) {
     e.preventDefault();
-    bubble.style.left   = bubble.getBoundingClientRect().left + 'px';
-bubble.style.top    = bubble.getBoundingClientRect().top  + 'px';
-bubble.style.bottom = 'auto';
-bubble.style.right  = 'auto';
+    bubble.style.position = 'absolute';
+    bubble.style.left   = (bubble.getBoundingClientRect().left + window.scrollX) + 'px';
+    bubble.style.top    = (bubble.getBoundingClientRect().top  + window.scrollY) + 'px';
+    bubble.style.bottom = 'auto';
+    bubble.style.right  = 'auto';
 
    const point = e.touches ? e.touches[0] : e;
    const rect = bubble.getBoundingClientRect();
@@ -219,8 +220,7 @@ bubble.style.right  = 'auto';
 
     bubble.style.left      = bubbleX + 'px';
     bubble.style.top       = bubbleY + 'px';
-    bubble.style.transform =
-      `rotate(${angle}rad) scale(${sx}, ${sy})`;
+    bubble.style.transform = `scale(${sx}, ${sy})`;
   }
 
   /* ── POINTER UP — inertia + settle ── */
