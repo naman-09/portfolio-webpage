@@ -371,7 +371,16 @@ h2.section-title {
   transition: transform var(--transition), border-color var(--transition);
 }
 .achievement-card:hover { transform: translateY(-3px); border-color: var(--cyan-dim); }
-.ach-icon { font-size: 2rem; flex-shrink: 0; }
+.ach-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.25));
+  transition: filter var(--transition), transform var(--transition);
+}
+.ach-icon:hover {
+  filter: drop-shadow(3px 6px 10px rgba(0, 0, 0, 0.35));
+  transform: translateY(-2px);
+}
 .ach-title { font-family: var(--font-ui); font-size: 0.9rem; font-weight: 700; margin-bottom: 0.25rem; }
 .ach-sub { font-size: 0.75rem; color: var(--text-dim); }
 .ach-year { font-size: 0.65rem; color: var(--cyan); margin-top: 0.4rem; letter-spacing: 0.1em; }
@@ -382,7 +391,11 @@ h2.section-title {
   transition: border-color var(--transition), transform var(--transition);
 }
 .extra-card:hover { border-color: var(--cyan-dim); transform: translateY(-3px); }
-.extra-icon { font-size: 2.5rem; flex-shrink: 0; }
+.extra-icon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.3));
+}
 .extra-title { font-family: var(--font-ui); font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
 .extra-sub { font-size: 0.8rem; color: var(--text-dim); line-height: 1.8; }
 
@@ -414,7 +427,16 @@ h2.section-title {
   transition: var(--transition);
 }
 .social-link:hover { border-color: var(--cyan); color: var(--cyan); transform: translateX(4px); }
-.social-icon { font-size: 1.1rem; width: 20px; text-align: center; }
+.social-icon {
+  font-size: 1.1rem;
+  width: 20px;
+  text-align: center;
+  filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.2));
+  transition: filter var(--transition);
+}
+.social-link:hover .social-icon {
+  filter: drop-shadow(2px 4px 8px rgba(201, 106, 46, 0.4));
+}
 .contact-form { display: flex; flex-direction: column; gap: 1rem; }
 .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
 .form-label { font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-dim); }
