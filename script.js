@@ -159,25 +159,20 @@ document.querySelectorAll('#hero .reveal').forEach((el, i) => {
   let lastX, lastY;           // last frame pointer position
   let rafId;
 
-  /* Set initial position from CSS (bottom-right area) */
-  function initPosition() {
-    const rect = bubble.getBoundingClientRect();
-    bubbleX = rect.left;
-    bubbleY = rect.top;
-    bubble.style.left = bubbleX + 'px';
-    bubble.style.top  = bubbleY + 'px';
-    bubble.style.bottom = 'auto';
-    bubble.style.right  = 'auto';
-  }
-
-  /* ── POINTER DOWN (mouse + touch) ── */
+    /* ── POINTER DOWN (mouse + touch) ── */
   function onPointerDown(e) {
     e.preventDefault();
-    initPosition();
+    bubble.style.left   = bubble.getBoundingClientRect().left + 'px';
+bubble.style.top    = bubble.getBoundingClientRect().top  + 'px';
+bubble.style.bottom = 'auto';
+bubble.style.right  = 'auto';
 
-    const point = e.touches ? e.touches[0] : e;
-    startX = point.clientX - bubbleX;
-    startY = point.clientY - bubbleY;
+   const point = e.touches ? e.touches[0] : e;
+   const rect = bubble.getBoundingClientRect();
+   startX = point.clientX - rect.left;
+   startY = point.clientY - rect.top;
+   bubbleX = rect.left;
+   bubbleY = rect.top;
     lastX  = point.clientX;
     lastY  = point.clientY;
     velX   = 0;
