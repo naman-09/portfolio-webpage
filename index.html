@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Naman Kumar — Full Stack Developer Portfolio"/>
+  <title>Naman Kumar · Full Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ── NAVBAR ─────────────────────────────────────── -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Naman<span>.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      <a href="mailto:naman.cs.data@gmail.com" class="nav-cta">Hire Me ↗</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HERO ───────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">Open to opportunities · 2025</div>
+      <h1 class="hero-name reveal reveal-delay-1">Naman<br><em>Kumar.</em></h1>
+      <p class="hero-typewriter reveal reveal-delay-2"><span id="typewriter"></span></p>
+      <div class="hero-btns reveal reveal-delay-3">
+        <a href="#projects" class="btn btn-primary">View Projects ↗</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch →</a>
+        <a href="https://www.linkedin.com/in/naman-kumar-711522248" target="_blank" class="btn btn-outline">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      scroll
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── ABOUT ──────────────────────────────────────── -->
+  <section id="about">
+    <div class="section-label reveal">Profile</div>
+    <h2 class="section-title reveal reveal-delay-1">About <em style="font-style:italic;color:var(--cyan)">Me</em></h2>
+    <div class="about-grid">
+      <div class="about-avatar-wrap reveal">
+        <div class="about-avatar">
+          <img src="assets/profile.jpg" alt="Naman Kumar" />
+        </div>
+        <div class="about-tag">CS @ Amity · 2026</div>
+      </div>
+      <div class="about-text">
+        <p class="reveal reveal-delay-1">I'm a full stack developer and final-year B.Tech Computer Science student at Amity University Haryana. I build responsive, end-to-end web applications — solid backend logic paired with clean, intuitive user interfaces.</p>
+        <p class="reveal reveal-delay-2">My stack centers on Django and JavaScript, with Vue.js and Tailwind CSS on the frontend. I care about database design, role-based architecture, and shipping systems that work reliably at every layer.</p>
+        <p class="reveal reveal-delay-3">Beyond code, I served as President of Amity Musical Society for two years — organizing concerts, mentoring members, and managing sponsorships. Leadership and collaboration come naturally to me.</p>
+        <div class="about-info-list reveal reveal-delay-4">
+          <div class="about-info-item"><strong>Location</strong> Sector 10A, Gurugram, Haryana</div>
+          <div class="about-info-item"><strong>Degree</strong> B.Tech — Computer Science</div>
+          <div class="about-info-item"><strong>University</strong> Amity University Haryana</div>
+          <div class="about-info-item"><strong>Phone</strong> +91 93194 54371</div>
+          <div class="about-info-item"><strong>Email</strong> naman.cs.data@gmail.com</div>
+        </div>
+        <div class="about-stats reveal reveal-delay-4" style="margin-top:1.5rem">
+          <div class="stat-box"><span class="stat-num">3</span><span class="stat-label">Projects</span></div>
+          <div class="stat-box"><span class="stat-num">2yr</span><span class="stat-label">Society Lead</span></div>
+          <div class="stat-box"><span class="stat-num">2026</span><span class="stat-label">Graduating</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── SKILLS ─────────────────────────────────────── -->
+  <section id="skills">
+    <div class="section-label reveal">Capabilities</div>
+    <h2 class="section-title reveal reveal-delay-1">Technical <em style="font-style:italic;color:var(--cyan)">Skills</em></h2>
+    <div class="skills-categories">
+
+      <div class="skill-category reveal">
+        <div class="cat-title">⚡ Languages</div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Python</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>JavaScript</span><span class="skill-pct">82%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="82"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>HTML / CSS</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="90"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>C / C++</span><span class="skill-pct">68%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="68"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal reveal-delay-1">
+        <div class="cat-title">🌐 Web Stack</div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Django</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Vue.js</span><span class="skill-pct">78%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="78"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Tailwind CSS</span><span class="skill-pct">88%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="88"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Alpine.js</span><span class="skill-pct">72%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="72"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>REST APIs</span><span class="skill-pct">82%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="82"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal reveal-delay-2">
+        <div class="cat-title">🗄 Databases</div>
+        <div class="skill-item">
+          <div class="skill-row"><span>MySQL</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>SQLite</span><span class="skill-pct">82%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="82"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Django ORM</span><span class="skill-pct">84%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="84"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-row"><span>Database Design</span><span class="skill-pct">78%</span></div>
+          <div class="skill-bar-bg"><div class="skill-bar" data-width="78"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-category reveal reveal-delay-3">
+        <div class="cat-title">🛠 Tools & More</div>
+        <div class="skill-tags">
+          <span class="tag">Git</span>
+          <span class="tag">GitHub</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Font Awesome</span>
+          <span class="tag">Role-Based Auth</span>
+          <span class="tag">CRUD</span>
+          <span class="tag">Migrations</span>
+          <span class="tag">3rd-party APIs</span>
+          <span class="tag">Responsive Design</span>
+          <span class="tag">State Management</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── PROJECTS ────────────────────────────────────── -->
+  <section id="projects">
+    <div class="section-label reveal">Work</div>
+    <h2 class="section-title reveal reveal-delay-1">Featured <em style="font-style:italic;color:var(--cyan)">Projects</em></h2>
+
+    <div class="filter-bar reveal reveal-delay-2">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Full Stack</button>
+      <button class="filter-btn" data-filter="travel">Travel / Content</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="project-card reveal" data-category="web">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#f5ebe0,#e8d5c4)">
+          💼
+          <span class="project-badge badge-web">Full Stack</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Job Portal Web Application</div>
+          <div class="project-desc">Full stack hiring platform where employers post and manage jobs while candidates search and apply. Features role-based authentication, keyword + location filtering, application tracking dashboards, and a fully responsive UI.</div>
+          <div class="project-stack">
+            <span class="stack-tag">Django</span>
+            <span class="stack-tag">SQLite</span>
+            <span class="stack-tag">Tailwind CSS</span>
+            <span class="stack-tag">Alpine.js</span>
+            <span class="stack-tag">Font Awesome</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/naman-kumar-711522248" class="project-link link-github" target="_blank">⌥ GitHub</a>
+            <a href="#" class="project-link link-demo">↗ Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1" data-category="web">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#f5ebe0,#dfc8b8)">
+          ✈️
+          <span class="project-badge badge-web">Full Stack</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Aerobook — Flight Booking Platform</div>
+          <div class="project-desc">Professional flight booking app with RESTful APIs for search, bookings, user profiles, and support. Secure authentication, third-party flight data integration, full ticketing system, and a clean responsive booking workflow.</div>
+          <div class="project-stack">
+            <span class="stack-tag">Django</span>
+            <span class="stack-tag">REST API</span>
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">Auth</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/naman-kumar-711522248" class="project-link link-github" target="_blank">⌥ GitHub</a>
+            <a href="#" class="project-link link-demo">↗ Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-2" data-category="travel">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#f5ebe0,#d4c9b8)">
+          🌊
+          <span class="project-badge badge-travel">Travel / Content</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">Pearl of the Indian Ocean</div>
+          <div class="project-desc">Sri Lanka travel guide website with 50+ curated location entries. Designed for real user engagement — tracked behavior during testing, iterated on navigation based on data, and reduced drop-offs through targeted UX improvements.</div>
+          <div class="project-stack">
+            <span class="stack-tag">HTML</span>
+            <span class="stack-tag">CSS</span>
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">UX Research</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/naman-kumar-711522248" class="project-link link-github" target="_blank">⌥ GitHub</a>
+            <a href="#" class="project-link link-demo">↗ Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── EDUCATION ───────────────────────────────────── -->
+  <section id="education">
+    <div class="section-label reveal">Background</div>
+    <h2 class="section-title reveal reveal-delay-1">Education &amp; <em style="font-style:italic;color:var(--cyan)">History</em></h2>
+    <div class="timeline">
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2022 – 2026</div>
+        <div class="timeline-card">
+          <div class="tl-company">Amity University Haryana · Gurugram</div>
+          <div class="tl-role">B.Tech in Computer Science and Technology</div>
+          <div class="tl-tags">
+            <span class="tag">Full Stack</span>
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">Data Science</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2021 – 2022</div>
+        <div class="timeline-card">
+          <div class="tl-company">Delhi Public School Ghaziabad · Gurugram</div>
+          <div class="tl-role">Class 12th — Science Stream</div>
+          <div class="tl-tags">
+            <span class="tag">PCM</span>
+            <span class="tag">Computer Science</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-dot" style="background:var(--text-muted);box-shadow:none"></div>
+        <div class="timeline-date">2019 – 2020</div>
+        <div class="timeline-card">
+          <div class="tl-company">Delhi Public School Ghaziabad · Gurugram</div>
+          <div class="tl-role">Class 10th</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── ACHIEVEMENTS ────────────────────────────────── -->
+  <section id="achievements">
+    <div class="section-label reveal">Recognition</div>
+    <h2 class="section-title reveal reveal-delay-1">Certifications &amp; <em style="font-style:italic;color:var(--cyan)">Activities</em></h2>
+
+    <div class="achievements-grid">
+      <div class="achievement-card reveal">
+        <span class="ach-icon">🐍</span>
+        <div>
+          <div class="ach-title">Complete 2025 Python Bootcamp</div>
+          <div class="ach-sub">Learn Python from Scratch — Udemy</div>
+          <div class="ach-year">2025</div>
+        </div>
+      </div>
+      <div class="achievement-card reveal reveal-delay-1">
+        <span class="ach-icon">📊</span>
+        <div>
+          <div class="ach-title">Data Science Job Ready Course</div>
+          <div class="ach-sub">Code with Harry</div>
+          <div class="ach-year">2024</div>
+        </div>
+      </div>
+      <div class="achievement-card reveal reveal-delay-2">
+        <span class="ach-icon">🌐</span>
+        <div>
+          <div class="ach-title">3 Shipped Full Stack Projects</div>
+          <div class="ach-sub">Django · Vue.js · REST APIs · MySQL</div>
+          <div class="ach-year">2024 – 2025</div>
+        </div>
+      </div>
+      <div class="achievement-card reveal reveal-delay-3">
+        <span class="ach-icon">🎵</span>
+        <div>
+          <div class="ach-title">Society President — 2 Years</div>
+          <div class="ach-sub">Amity Musical Society · Concerts & Events</div>
+          <div class="ach-year">2023 – 2025</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="extra-card reveal">
+      <div class="extra-icon">🎵</div>
+      <div>
+        <div class="extra-title">President · Amity Musical Society — Amity University Haryana</div>
+        <div class="extra-sub" style="margin-top:0.4rem">Led the society for 2 years, organizing concerts, cultural events, and workshops on campus. Mentored members, managed event logistics, secured sponsorships, and built collaborations that expanded music culture at Amity. Developed strong communication, leadership, and organizational skills alongside technical work.</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- ── RESUME ──────────────────────────────────────── -->
+  <div id="resume-section">
+    <div class="resume-inner">
+      <div class="resume-text reveal">
+        <div class="section-label" style="margin-bottom:0.75rem">Resume</div>
+        <h2>Want the <em style="font-style:italic;color:var(--cyan)">full</em> picture?</h2>
+        <p>I'm actively looking for full stack developer roles and internship opportunities. Reach out directly or connect on LinkedIn — I respond fast.</p>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap">
+          <a href="mailto:naman.cs.data@gmail.com" class="btn btn-primary">Email Me ✉</a>
+          <a href="https://www.linkedin.com/in/naman-kumar-711522248" class="btn btn-outline" target="_blank">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="resume-preview reveal reveal-delay-1">
+        <h3>Naman Kumar · Quick Snapshot</h3>
+        <div class="rp-section">
+          <div class="rp-label">Education</div>
+          <div class="rp-item">B.Tech CST — Amity University Haryana (2026)</div>
+          <div class="rp-item">Class 12 + 10 — DPS Ghaziabad, Gurugram</div>
+        </div>
+        <div class="rp-section">
+          <div class="rp-label">Projects</div>
+          <div class="rp-item">Job Portal — Django, Tailwind, Alpine.js</div>
+          <div class="rp-item">Aerobook — Flight Booking + REST APIs</div>
+          <div class="rp-item">Pearl of the Indian Ocean — Travel Guide</div>
+        </div>
+        <div class="rp-section" style="border:none;margin:0;padding:0">
+          <div class="rp-label">Stack</div>
+          <div class="rp-item">Python, JavaScript, C/C++, HTML/CSS</div>
+          <div class="rp-item">Django, Vue.js, Tailwind, MySQL, Git</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CONTACT ─────────────────────────────────────── -->
+  <section id="contact">
+    <div class="section-label reveal">Connect</div>
+    <h2 class="section-title reveal reveal-delay-1">Get In <em style="font-style:italic;color:var(--cyan)">Touch</em></h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <h3>Let's build something together.</h3>
+        <p>I'm open to full stack developer roles, internships, and freelance projects. If you've got something interesting in mind, reach out — I'd love to hear about it.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/naman-kumar-711522248" class="social-link" target="_blank">
+            <span class="social-icon">💼</span>
+            <span>LinkedIn — /in/naman-kumar-711522248</span>
+          </a>
+          <a href="mailto:naman.cs.data@gmail.com" class="social-link">
+            <span class="social-icon">✉</span>
+            <span>naman.cs.data@gmail.com</span>
+          </a>
+          <a href="tel:+919319454371" class="social-link">
+            <span class="social-icon">📞</span>
+            <span>+91 93194 54371</span>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form reveal reveal-delay-1">
+        <div class="form-group">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-input" placeholder="Jane Smith" id="cfName">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Email Address</label>
+          <input type="email" class="form-input" placeholder="jane@company.com" id="cfEmail">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Hi Naman, I'd love to chat about..." id="cfMsg"></textarea>
+        </div>
+        <button class="form-submit" onclick="sendMsg(event)">Send Message →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ──────────────────────────────────────── -->
+  <footer>
+    <span>© 2025 Naman Kumar · Full Stack Developer · Gurugram, India</span>
+    <span><a href="#hero">↑ Back to top</a></span>
+  </footer>
+
+  <button id="back-top" aria-label="Back to top">↑</button>
+
+  <!-- JavaScript — loaded at end of body for best performance -->
+  <script src="script.js"></script>
+
+</body>
+</html>
